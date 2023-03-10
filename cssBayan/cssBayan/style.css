@@ -1,4 +1,68 @@
+.wrapper {
+    position: relative;
+    margin: auto;
+}
 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.h1 {
+    max-width: 30%;
+    margin: auto;
+}
+
+
+.accordion {
+    max-width: 30%;
+    margin: auto;
+}
+
+
+.meme {
+    border: 1px solid #444;
+}
+
+
+.accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    color: #444;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.2s ease-out;
+}
+
+
+.accordion-header:hover {
+    background-color: #ddd37a;
+}
+
+
+.content-click {
+    appearance: none;
+    position: absolute;
+}
+
+
+.content-click:checked ~ .content{
+    display: block;
+}
+
+
+.content-click:checked ~ .accordion-header {
+    background-color: #ddd37a;
+}
+
+
+.content {
+    display: none;
+}
 
 
 
