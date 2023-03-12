@@ -1,0 +1,93 @@
+.wrapper {
+    position: relative;
+    margin: auto;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8C8C8C;
+    
+}
+
+
+.h1 {
+    max-width: 30%;
+    margin: auto;
+}
+
+
+.accordion {
+    max-width: 30%;
+    margin: auto;
+}
+
+
+.meme {
+    border: 1px solid #FBEECA;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+
+.accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    color: #241C15;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.2s ease-out;
+}
+
+.accordion-header:after {
+    content: "";
+    display: block;
+    top: 50%;
+    right: 15px;
+    position: absolute;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #241c15 transparent transparent transparent;
+    transform: translateY(-50%);
+}
+
+
+
+.accordion-header:hover {
+    background-color: #FBEECA;
+    border-radius: 10px;
+}
+
+
+.content-click {
+    appearance: none;
+    position: absolute;
+}
+
+
+.content-click:checked ~ .content{
+    display: block;
+}
+
+
+.content-click:checked ~ .accordion-header {
+    background-color: #FBEECA;
+    border-radius: 10px;
+}
+
+
+.content-click:checked ~ .accordion-header:after {
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent #241c15 transparent;
+}
+
+
+.content {
+    display: none;
+    max-width: 30%;
+    padding: 10px 25px;
+}
